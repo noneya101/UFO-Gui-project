@@ -10,7 +10,7 @@ yVelocity = 3
 
 # Initialize Pygame mixer and load the sound file
 pygame.mixer.init()
-sound_file = "Space_age_love_song.mp3"
+sound_file = "example.mp3"
 pygame.mixer.music.load(sound_file)
 pygame.mixer.music.play(-1)# -1 to loop the music indefinitely
 
@@ -19,8 +19,6 @@ Window = Tk()
 Window.geometry(f"{WIDTH}x{HEIGHT}")  # Set the window size
 Window.resizable(False, False)# Lock the width and height
 Window.title("UFO-Gui")
-icon = PhotoImage(file='ufo-icon.png')#icon photo
-Window.iconphoto(True,icon)
 
 # Create the canvas
 Canvas = Canvas(Window,width=WIDTH,height=HEIGHT)
